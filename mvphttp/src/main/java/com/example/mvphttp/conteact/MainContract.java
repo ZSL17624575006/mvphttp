@@ -1,5 +1,6 @@
 package com.example.mvphttp.conteact;
 
+import com.example.mvphttp.base.BaseView;
 import com.example.mvphttp.model.UserBean;
 import com.example.mvphttp.net.INetCallBack;
 
@@ -10,7 +11,7 @@ public class MainContract {
     public  interface IMainPresenter {
         void login(String url);
     }
-    public interface IMainView {
+    public interface IMainView extends BaseView {
 
         <T> void loginRelt(T t);
     }

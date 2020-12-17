@@ -5,7 +5,9 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity {
+import com.example.mvphttp.conteact.MainContract;
+
+public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements MainContract.IMainView {
     public P presenter;
 
     @Override
@@ -14,6 +16,7 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
         setContentView(getLayout());
         if (presenter == null){
             presenter = add();
+            presenter.attachView(this);
         }
         initView();
         initData();
