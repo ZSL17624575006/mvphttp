@@ -1,4 +1,4 @@
-package com.example.mvphttp;
+package com.example.mvphttp.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.mvphttp.R;
 import com.example.mvphttp.api.URLConstant;
 import com.example.mvphttp.base.BaseActivity;
 import com.example.mvphttp.conteact.MainContract;
