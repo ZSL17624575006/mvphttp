@@ -23,7 +23,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     protected void initView() {
-
+        //老师总是这样给我们教完题就跑了
     }
 
     @Override
