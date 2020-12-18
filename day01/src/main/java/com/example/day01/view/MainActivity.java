@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.example.day01.R;
-import com.example.day01.api.URLConstant;
-import com.example.day01.base.BaseActivity;
 import com.example.day01.bean.MainDataBean;
 import com.example.day01.conteact.MainConteact;
 import com.example.day01.presenter.MainPresenter;
+import com.example.mvplibrary.api.URLConstant;
+import com.example.mvplibrary.base.BaseActivity;
 
 import java.util.ArrayList;
 

@@ -2,8 +2,8 @@ package com.example.day01.model;
 
 import com.example.day01.bean.MainDataBean;
 import com.example.day01.conteact.MainConteact;
-import com.example.day01.net.IMainCallBack;
-import com.example.day01.net.MainRetrofitUrils;
+import com.example.mvplibrary.net.IMainCallBack;
+import com.example.mvplibrary.net.MainRetrofitUrils;
 
 public class MainModel implements MainConteact.IMainModel {
 

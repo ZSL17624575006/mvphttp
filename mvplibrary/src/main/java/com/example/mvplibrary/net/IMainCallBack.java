@@ -1,4 +1,4 @@
-package com.example.day01.net;
+package com.example.mvplibrary.net;
 
 public interface IMainCallBack<T> {
     public void onSuccess(T t);

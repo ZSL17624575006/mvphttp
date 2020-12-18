@@ -1,7 +1,7 @@
-package com.example.day01.net;
+package com.example.mvplibrary.net;
 
-import com.example.day01.api.ApiService;
-import com.example.day01.api.URLConstant;
+import com.example.mvplibrary.api.ApiService;
+import com.example.mvplibrary.api.URLConstant;
 import com.google.gson.Gson;
 
 import java.io.IOException;

@@ -1,13 +1,12 @@
 package com.example.day01.presenter;
 
-import com.example.day01.base.BaseActivity;
-import com.example.day01.base.BasePresenter;
 import com.example.day01.bean.MainDataBean;
 import com.example.day01.conteact.MainConteact;
 import com.example.day01.model.MainModel;
-import com.example.day01.net.IMainCallBack;
+import com.example.mvplibrary.base.BasePresenter;
+import com.example.mvplibrary.net.IMainCallBack;
 
-public class MainPresenter extends BasePresenter<MainConteact.IMainView> implements MainConteact.IMainPresenter {
+public class MainPresenter extends BasePresenter<MainConteact.IMainView, MainConteact.IMainModel> implements MainConteact.IMainPresenter {
 
     private MainConteact.IMainModel mainModel;
 
@@ -27,5 +26,10 @@ public class MainPresenter extends BasePresenter<MainConteact.IMainView> impleme
 
             }
         });
+    }
+
+    @Override
+    protected MainConteact.IMainModel getiModel() {
+        return new MainModel(this);
     }
 }

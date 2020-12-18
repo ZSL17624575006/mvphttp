@@ -1,10 +1,12 @@
 package com.example.day01.conteact;
 
-import com.example.day01.base.BaseView;
-import com.example.day01.net.IMainCallBack;
+
+import com.example.mvplibrary.base.BaseModel;
+import com.example.mvplibrary.base.BaseView;
+import com.example.mvplibrary.net.IMainCallBack;
 
 public class MainConteact {
-    public interface IMainModel{
+    public interface IMainModel extends BaseModel {
         <T> void getMainData(String string, IMainCallBack<T> callBack);
     }
     public interface IMainPresenter{

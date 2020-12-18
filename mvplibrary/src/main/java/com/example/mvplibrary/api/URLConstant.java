@@ -1,4 +1,4 @@
-package com.example.day01.api;
+package com.example.mvplibrary.api;
 
 public class URLConstant {
     public static String URLBEAN = "http://cdwan.cn:7000/";

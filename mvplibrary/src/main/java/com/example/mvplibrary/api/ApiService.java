@@ -1,4 +1,4 @@
-package com.example.day01.api;
+package com.example.mvplibrary.api;
 
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
